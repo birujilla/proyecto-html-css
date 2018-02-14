@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon success</title>
+    <g id="icon-success" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_success" fill="#349C2B">
+            <path d="M15,-0.0002 C23.284,-0.0002 30,6.7158 30,14.9998 C30,23.2838 23.284,29.9998 15,29.9998 C6.716,29.9998 0,23.2838 0,14.9998 C0,6.7158 6.716,-0.0002 15,-0.0002 Z M15,27.9998 C22.168,27.9998 28,22.1678 28,14.9998 C28,7.8318 22.168,1.9998 15,1.9998 C7.832,1.9998 2,7.8318 2,14.9998 C2,22.1678 7.832,27.9998 15,27.9998 Z M20.4287,11.16 L21.8397,12.572 L13.5717,20.84 L13.5707,20.839 L13.5697,20.84 L8.3017,15.571 L9.7127,14.16 L13.5707,18.018 L20.4287,11.16 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,254 @@
+/* Julia Carmona Felipe */
+
+* {margin: 0; padding: 0; box-sizing: border-box}
+
+body {font-family: 'Montserrat', sans-serif;
+      font-size: 20px; color: darkslategrey;
+      background-color: rgba(126, 199, 199, 0.856); }
+/* body p {text-align: justify;} */
+nav {background-color: rgba(177, 230, 230, 0.671);
+      box-shadow: 4px darkslategrey;border-radius: 20px;}
+
+nav a {text-decoration: none; color: darkslategrey;}
+
+a {color: darkslategrey;}
+
+a:hover {color: darkslategrey;}
+
+img {max-width: 100%;}
+
+a.activo {color: darkslategrey;}
+h3 {color: darkslategrey; font-size: 30px;
+     padding-bottom: 15px; }
+header {display: flex; justify-content: space-between;
+     height: 100px; align-items: center; 
+     padding: 20px; position: absolute;
+     width: 100%; top: 0; }
+/* para configurar la hamburguesa */
+header .burger {display: none; color: rgb(140, 218, 218);font-size: 36px;}
+header nav ul {list-style: none; display: flex;}
+header nav ul li {padding: 20px;}
+header nav.inf ul li a {color: darkslategrey}
+header nav.sup ul li a {color: darkslategrey}
+
+/* configuracion de la pagina de contacto */
+.pagcontacto {box-shadow: 0 4px 12px darkslategrey; 
+      background: darkslategrey; position: initial;}
+.inf { padding: 20px; margin-top: 200px; 
+    margin-left: -200px;}
+.sup {padding: 20px;}
+
+.hero {height: 100vh; background-image: url('../img/fondo inicio.jpg');
+    background-size: cover; background-position: center; display: flex;
+    flex-direction: column; justify-content: flex-end; align-items: center;}
+
+@keyframes intermitente {0% {opacity:0.4;} 50% {opacity: 1;} 100% {opacity: 0.4;}}
+
+.hero h1 {color: rgb(135, 194, 194); font-size: 70px;}
+.hero h2 {color:rgb(135, 194, 194) ; margin-bottom: 80px; font-size: 35px;}
+.hero a { color: rgb(135, 194, 194); font-size: 70px;
+     margin-bottom: 15px; animation-name: intermitente; animation-duration: 2s;
+     animation-iteration-count: infinite;}
+.fila {padding: 40px; 
+    display: flex;/*para que las columnas sean cajas*/
+     flex-wrap: wrap;}/*cuando las cajas no quepan en el mismo espacio, salten. */
+
+
+.col1 {/* border: solid 2px rgb(132, 196, 196);*/ 
+     /*flex-basis: 300px;*/  /*referencia de 300px*/
+      flex-grow: 1;/*cuando tenga espacio crecerá una unidad.*/
+      padding: 10px;}
+.col2 {flex-basis: 300px; flex-grow: 2; padding: 10px; align-items: flex-end;}
+.centrado {display: flex; justify-content: center;align-items: center;}
+.columna {display: flex; flex-direction: column; align-items: center;
+      justify-content: center;}
+.separador {border: 2px double darkslategrey; display: none; width: 60%;}
+.col3 {/* border: solid 2px rgb(132, 196, 196);*/flex-basis: 300px;
+      flex-grow: 3;}
+.col100 {padding: 10px; width: 100%; display: flex; justify-content:center;
+      align-items: center; }
+
+.boton {margin: 40px; color: darkslategrey; 
+      background-color:rgb(132, 196, 196); font-size: 22px; padding: 12px;
+      border-radius: 15px; border: 3px solid darkslategrey;  }
+.boton:hover {background-color: rgb(87, 139, 139); cursor: pointer;color: darkslategrey;}
+.compra {background-color: rgb(132, 196, 196);}
+.alquiler {background-color: rgb(132, 196, 196);}
+.fondo {background-color: rgb(184, 231, 231) }
+.ultima {margin-bottom: 40px;}
+.newsletter {font-size: 30px; color: darkslategrey;/* border: 3px solid darkslategrey;*/}
+.boton_newsletter {margin: 10px 20px; color: darkslategrey;background-color:rgb(184, 231, 231);
+       font-size: 22px; padding: 12px; border-radius: 15px;
+       border: 3px solid darkslategrey; background-color: rgb(184, 231, 231); }
+.input_newsletter {color: darkslategrey;background-color:rgb(184, 231, 231);
+       padding: 15px; border: 3px solid darkslategrey; border-radius: 15px;
+      font-size: 22px; margin: 10px 20px; }
+
+footer {background:
+      linear-gradient(135deg, darkslategrey 22px, rgb(87, 139, 139) 22px, rgb(87, 139, 139) 24px, transparent 24px,
+      transparent 67px, rgb(87, 139, 139) 67px, rgb(87, 139, 139) 69px, transparent 69px),
+      linear-gradient(225deg, darkslategrey 22px, rgb(87, 139, 139) 22px, rgb(87, 139, 139) 24px, transparent 24px,
+      transparent 67px, rgb(87, 139, 139) 67px, rgb(87, 139, 139) 69px, transparent 69px)0 64px;
+      background-color:darkslategrey;
+      background-size: 100px 100px; display: flex; flex-wrap: wrap; font-size: 18px;
+      position: relative;}
+
+.top {font-size: 70px;height: 60px;width: 60px;padding: 10px; position: absolute; top: -60px; right: 50%;transform: translateX(50%);
+      background-color: rgb(132, 196, 196); border-radius: 35px; margin-bottom: 15px; display: flex; justify-content: center; 
+      align-items: center; animation-name: arriba; animation-duration: 2s; animation-iteration-count: infinite;}
+@keyframes arriba {0% {opacity:0.5;} 50% {opacity: 1;} 100% {opacity: 0.5;}}
+.topcontacto {font-size: 70px;height: 60px;width: 60px;padding: 10px; position: absolute; top: -40px; right:50%;transform: translateX(50%);
+      background-color: rgb(132, 196, 196); border-radius: 35px; margin-bottom: 15px; display: flex; justify-content: center; 
+      align-items: center; animation-name: arriba; animation-duration: 2s; animation-iteration-count: infinite;}
+
+footer a { color:darkslategrey }
+.footdir {padding: 20px;border-radius: 15px; text-align: center; }
+.footdir p {padding: 5px; color:rgb(132, 196, 196); }
+.footmed {padding: 20px;border-radius: 15px;  display: flex; flex-direction: column; 
+        text-align: center; justify-content: space-around;}
+.footmed a {font-size: 25px; margin: 5px;color: rgb(132, 196, 196); text-decoration: none; }
+.footmed a:hover {color: rgb(104, 190, 190);}
+.footrrss {padding: 20px;border-radius: 15px; display: flex;flex-direction: column;
+      justify-content: space-between;align-items: center;}
+.footrrss a {margin: 5px;color: rgb(132, 196, 196); font-size: 40px; }
+.footrrss a:hover {color: rgb(104, 190, 190);}
+
+.legales a {font-size: 16px;}
+
+.minifooter p {font-size:16px; padding: 5px; color: rgb(104, 190, 190); }
+
+/* estilos para la página de contacto. */
+
+.direccion {line-height: 2em;}
+h1 {font-size: 34px; padding: 10px;}
+h2 {font-size: 24px; padding: 10px;}
+ul {padding-left: 60px;}
+li {padding: 10px; line-height: 1.4em;}
+.contenedor {display: flex; flex-direction: column; align-items: center;
+        }
+form {margin: 40px 0 40px;
+      width: 70%;
+      padding: 10px;
+      border: 3px solid darkslategrey;
+      border-radius: 20px;
+      box-shadow: 4px 4px 16px rgba(47, 79, 79, 0.835);
+      background-color: darkslategrey;}    
+div .formulario .col50 {display: flex; flex-direction: column; } 
+.formulario {display: flex; /*justify-content: space-between;*/}
+.col50 {width: 50%;padding: 15px; display: flex; flex-direction: column;flex-wrap: wrap}
+.col30 {width: 30%; padding-bottom: 15px;display: flex; flex-direction: column;flex-wrap: wrap}
+.col60 {width: 60%; padding-bottom: 15px; display: flex; flex-direction: column;flex-wrap: wrap}
+input {font-size: 20px; padding-bottom: 5px; border: 3px solid darkslategrey;}
+input:focus {background-color: rgb(98, 170, 170); color: darkslategrey;
+       outline: none;}
+.input_formulario {color: darkslategrey;background-color:rgb(184, 231, 231);
+      padding: 15px; border: 3px solid darkslategrey; border-radius: 15px;
+     font-size: 22px; margin: 10px 20px; }
+form {margin: 40px 0 40px;width: 70%; padding:20px;
+       box-shadow: 4px 4px 16px rgba(47, 79, 79, 0.5);background-color:rgb(98, 170, 170);
+       border-radius: 20px;}
+
+
+/* estilos para la pagina de compra */
+body.compra {font-size: 16px;}
+a {text-decoration: none;}
+a:hover {color: grey;}
+p {display: block; -webkit-margin-before: 1em; -webkit-margin-start: 0px;
+   -webkit-margin-after: 1em; -webkit-margin-end: 0px; }
+/* .activo {} */
+.contenedortarjetas {margin: 20px; display: grid; grid-template-columns: repeat(auto-fit, 300px);
+            grid-template-rows: repeat(3, 350px); grid-gap: 150px; }
+.tarjeta {width: 350px; height: 200px; box-shadow: 2px 2px 4px darkslategrey;}
+.imagen {width: 350px; height: 200px; overflow: hidden;}
+.imagen img {height: 200px;width: 350px;}
+.tarjeta .datos .telefono a {box-shadow: 2px 2px 4px darkslategrey;width: 300px; height: 300px;}
+.datos {padding: 10px; height: 200px; display: flex; flex-direction: column;
+       /*align-items: flex-start; justify-content: space-between;*/}
+.toptarjeta {width: 280px; display: flex; justify-content: space-between;}
+.direcciontarjeta {width: 300px;}
+/* .direcciontarjeta p{margin-bottom: 10px;} */
+.direcciontarjeta p:first-child {color: darkslategrey; font-weight:bold; }
+.rrss {padding: 10px;border-radius: 15px; display: flex;flex-direction: column;
+      justify-content: space-between;align-items: center;}
+.rrss a {margin: 5px;color: darkslategrey; font-size: 20px; }
+.rrss a:hover {color: rgb(69, 161, 161);}
+ .botontarjeta {/**/margin: 10px;padding: 3px; font-size: 14px; color: darkslategrey; 
+      background-color:rgb(132, 196, 196);  border: 1px solid darkslategrey;
+      border-radius: 15px;  }
+.botontarjeta:hover {background-color: rgb(188, 240, 240); cursor: pointer; color: darkslategrey;}
+.telefono {width: 100%;margin-top: -40px; height: 40px;}
+.columnacompra {margin-top: 80px;display: flex; flex-direction: column; align-items: center;
+    /*  justify-content: center;*/ text-align: center;color: darkslategrey;}
+.columnacompra:hover {color: darkslategrey;}
+
+.menunav {width: 100%; display: flex; flex-direction: row; align-items: center;
+      justify-content: center; height: 180px; }
+.menunav a {width: 60px; height: 30px; background-color: rgb(188, 240, 240); color: darkslategrey;
+      font-size: 24px; border-radius: 15px; border: 2px double darkslategrey; padding-top:-15px; text-align: center;}
+.menunav a button{font-size: 24px; color: darkslategrey; background-color: transparent; border: transparent;}
+.menunav a:hover {background-color: rgba(108, 192, 192, 0.767); }
+
+
+/* pagina subcompra 3 */
+/* .columnasubcompra3 {display: flex; flex-direction: column; justify-content: center;text-align: cente; margin-top: 150px;} */
+
+/* configuracion pagina de la villa de san roque */
+.villasanroque {margin: 20px; }
+.villasanroque p {align-items: left;}
+.filagr {display: flex; justify-content: space-around;flex-wrap: wrap; }
+.colgr {flex-basis: 400px; flex-grow: 1; padding: 35px; margin: 20px;}
+.colgr img{margin-bottom: 50px; width: 700px; height: 500px; border: 4px dotted darkslategrey;}
+
+/* .descripcion {width: 400px; height: 300px; box-shadow: 2px 2px 4px darkslategrey; }
+.villa {width: 400px; height: 300px; }*/
+.hrclass {border-bottom: 3px solid rgb(66, 134, 134);box-shadow: 2px 2px 4px darkslategrey; 
+      background-color: darkslategrey;} 
+.iconosvilla {width: 250px;display: flex; justify-content: space-around;
+      align-items: center; padding: 10px; margin: 15px;}
+.moneda {width: 100px;display: flex; justify-content: space-around;
+      align-items: center; padding: 10px; margin: 15px;}
+.precio {width: 100px;display: flex; justify-content: space-around;
+      align-items: center; padding: 10px; margin: 10px;margin-left: 55px}
+label {width: 100px;display: flex; justify-content: space-around;
+      align-items: center; padding: 10px; margin: 15px; right: 20px;}
+select#precio {width: 100px;display: flex; justify-content: space-around;
+      align-items: center; padding: 10px; margin: 15px;box-shadow: 2px 2px 4px darkslategrey;color: darkslategrey;
+      background-color:rgb(188, 240, 240);border: 3px solid darkslategrey;}
+option:hover {background-color: rgb(188, 240, 240); color: darkslategrey;}
+
+.input_formulario1 {color: darkslategrey;background-color:rgb(184, 231, 231);
+      padding: 15px; border: 3px solid darkslategrey; border-radius: 15px;
+     font-size: 22px; margin: 10px 20px; width: 300px;  }
+
+/* configuracion pagina de alquiler */
+a .botontarjeta {margin: 20px; padding: 10px;}
+
+
+/* Media Queries */
+@media (min-width: 1920px) {form {max-width: 1400px;}}
+@media (max-width:960px) {form { width: 90%;} }
+
+@media (max-width: 1150px) {div.menunav {height: 500px;}
+form .formulario .col50{font-size: 18px; display: flex; flex-wrap: wrap;}}
+@media (max-width:700px) {nav {display: none;} 
+header .burger {display: initial}
+.fila {display: flex;flex-direction: column;}
+.col30, .col50, .col60 { display: flex;flex-wrap: wrap; flex-direction: column;}
+.hero h1 {font-size: 36px ; text-align: center;}
+.hero h2 {font-size: 26px ; text-align: center;}
+.col1 {flex-basis: initial;}
+.columna img {height: 60px;}
+.columna .boton {margin: 20px;font-size: 18px; padding: 8px; text-align: center;
+                border: 3px solid darkslategrey;font-size: 16px}
+.newsletter {font-size: 24px; text-align: center;}
+.boton_newsletter {font-size: 18px; padding: 8px;}
+.input_newsletter { padding: 12px;  font-size: 18px;}
+div.menunav {font-size: 20px;}
+}
+@media (max-width: 555px) {.col1 .footdir,.col1 .footmed,.col1 .footrrss {flex-basis: 200px; font-size: 14px;}
+.boton_newsletter {font-size: 12px; padding: 8px;}
+.input_newsletter { padding: 12px;  font-size: 12px;}
+.fila {flex-direction: column; align-items: center}
+.separador {display: initial}
+.col100 {flex-direction: column; align-items: center;}
+}
